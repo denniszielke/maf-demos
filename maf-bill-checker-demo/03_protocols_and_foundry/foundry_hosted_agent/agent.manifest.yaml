@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Agent
+metadata:
+  name: bill-checker-hosted
+spec:
+  runtime:
+    image: bill-checker-hosted:latest
+    protocol: responses
+  env:
+    - name: FOUNDRY_PROJECT_ENDPOINT
+      value: <foundry-endpoint>
+    - name: FOUNDRY_MODEL
+      value: gpt-4.1-mini

@@ -1,0 +1,30 @@
+[
+  {
+    "customer_id": "CUST-1001",
+    "name": "Contoso Manufacturing GmbH",
+    "legal_address": "Musterstrasse 10, 10115 Berlin, DE",
+    "country": "DE",
+    "risk_tier": "low"
+  },
+  {
+    "customer_id": "CUST-1002",
+    "name": "Fabrikam Retail BV",
+    "legal_address": "Keizersgracht 200, 1016 DW Amsterdam, NL",
+    "country": "NL",
+    "risk_tier": "medium"
+  },
+  {
+    "customer_id": "CUST-1003",
+    "name": "Adventure Works SARL",
+    "legal_address": "10 Rue de Lyon, 75012 Paris, FR",
+    "country": "FR",
+    "risk_tier": "low"
+  },
+  {
+    "customer_id": "CUST-1004",
+    "name": "Woodgrove Logistics Ltd",
+    "legal_address": "1 Kingsway, WC2B 6AN London, GB",
+    "country": "GB",
+    "risk_tier": "high"
+  }
+]

@@ -1,0 +1,7 @@
+name: bill-checker-hosted
+model: ${FOUNDRY_MODEL}
+endpoint: ${FOUNDRY_PROJECT_ENDPOINT}
+protocol: responses
+tools:
+  source: foundry_toolbox
+  toolbox_id: <toolbox-id>
