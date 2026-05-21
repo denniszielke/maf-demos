@@ -5,7 +5,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.append(str(ROOT / "02_workflow_orchestration"))
+sys.path.insert(0, str(ROOT / "02_workflow_orchestration"))
 from main import run_workflow  # type: ignore  # noqa: E402
 
 

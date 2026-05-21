@@ -9,7 +9,7 @@ from pydantic import BaseModel
 import uvicorn
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.append(str(ROOT / "02_workflow_orchestration"))
+sys.path.insert(0, str(ROOT / "02_workflow_orchestration"))
 from main import run_workflow  # type: ignore  # noqa: E402
 
 BILL_PATH = ROOT / "00_scenario" / "sample_bill.json"
