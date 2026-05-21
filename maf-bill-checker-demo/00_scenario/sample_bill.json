@@ -1,0 +1,32 @@
+{
+  "bill_id": "BILL-2026-0001",
+  "supplier_name": "Northwind Industrial Supplies",
+  "supplier_vat_id": "DE123456789",
+  "bill_date": "2026-05-01",
+  "currency": "EUR",
+  "line_items": [
+    {
+      "description": "Steel bolts pack",
+      "qty": 10,
+      "unit_price": 12.5,
+      "vat_rate": 0.19
+    },
+    {
+      "description": "Machine lubricant",
+      "qty": 5,
+      "unit_price": 20.0,
+      "vat_rate": 0.19
+    }
+  ],
+  "subtotal": 225.0,
+  "vat_total": 42.75,
+  "total": 267.75,
+  "payment_terms_days": 30,
+  "ship_to_address": {
+    "street": "Musterstrasse 10",
+    "city": "Berlin",
+    "postal_code": "10115",
+    "country": "DE"
+  },
+  "customer_id": "CUST-1001"
+}
