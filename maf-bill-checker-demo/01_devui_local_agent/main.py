@@ -6,6 +6,7 @@ import os
 from pathlib import Path
 from typing import Any
 
+from azure.identity import DefaultAzureCredential
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse, JSONResponse
 import uvicorn
@@ -97,8 +98,9 @@ def serve(*, agents: list[BillCheckerAgent], host: str = "127.0.0.1", port: int 
 def main(devui: bool, port: int) -> None:
     endpoint = os.getenv("FOUNDRY_PROJECT_ENDPOINT", "<not set>")
     model = os.getenv("FOUNDRY_MODEL", "<not set>")
+    credential = DefaultAzureCredential()
     print(f"Foundry config -> endpoint: {endpoint} | model: {model}")
-    print("Auth pattern: DefaultAzureCredential (configure in .env when using Foundry).")
+    print(f"Auth: {type(credential).__name__}")
 
     agent = BillCheckerAgent()
     bill = json.loads(BILL_PATH.read_text(encoding="utf-8"))
